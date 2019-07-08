@@ -1,0 +1,115 @@
+
+/*body{
+  color: green;
+}*/
+
+.c-header{
+  font-family: Calibri;
+}
+
+.c-content{
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: repeat(3, auto);
+  font-family: Calibri;
+}
+
+/*  --- NAV ---  */
+ul{
+  list-style-type: none;
+}
+.c-nav{
+  width: 100%;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.c-nav_up{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.c-nav_up-li{
+  display: block;
+  /*background: antiquewhite;*/
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/*  --- VIDEO ---  */
+.c-box{
+  background: black;
+  width: 100%;
+  height: 40rem;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+/*  --- ACTIVITIES  --- */
+.c-act{
+  display: block;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 0;
+  padding: 0 1rem 0 1rem;
+}
+.c-act-li_zazn{
+  display: flex;
+  flex-direction: column;
+}
+.c-act_heading{
+  margin: 0.5rem 0 0 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.c-act_heading-first{
+  margin: 0
+}
+
+/*  INPUTS  */
+.c-act_inputs{
+  margin-top: 0.5rem;
+}
+.c-act-input_marg{
+  margin-bottom: 0.5rem;
+}
+#input1, #input2a, #input3a{
+  height: 5rem;
+  width: 100%;                //JEŠTĚ UPRAVIT, NENÍ STEJNĚ ŠIROKÉ JAKO OSTATNÍ
+  resize: none;
+}
+#input2b, #input3b{
+  height: 1rem;
+  width: 100%;                //JEŠTĚ UPRAVIT, NENÍ STEJNĚ ŠIROKÉ JAKO OSTATNÍ
+  resize: none;
+}
+
+/*  BUTTONS  */
+.c-act_btns-row{
+  display: inline-flex;
+  width: 100%;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.c-act-btn_2{                 //2 means number of buttons
+  width: calc(100% / 2);
+}
+.c-act-btn_marg{
+  margin-right: 0.5rem;
+}
+.c-act-btn_3{                 //3 means number of buttons
+  width: calc(100% / 3);
+}
+.c-act_btns-column{
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0.5rem 0 0 0;       //top and bottom margin are 0.5rem
+}
+.c-act-btn_clm{               //clm means buttons in columns
+  width: calc((100% / 2) - (0.5rem / 2));
+  margin-bottom: 0.5rem;
+}
