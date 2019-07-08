@@ -68,19 +68,24 @@ ul{
 /*  INPUTS  */
 .c-act_inputs{
   margin-top: 0.5rem;
+  width: 100%;
 }
 .c-act-input_marg{
   margin-bottom: 0.5rem;
 }
 #input1, #input2a, #input3a{
   height: 5rem;
-  width: 100%;                //JEŠTĚ UPRAVIT, NENÍ STEJNĚ ŠIROKÉ JAKO OSTATNÍ
+  box-sizing: border-box;
+  width: 100%;
   resize: none;
+  padding: 0.3rem;
 }
 #input2b, #input3b{
-  height: 1rem;
-  width: 100%;                //JEŠTĚ UPRAVIT, NENÍ STEJNĚ ŠIROKÉ JAKO OSTATNÍ
+  height: 1.7rem;
+  box-sizing: border-box;
+  width: 100%;
   resize: none;
+  padding: 0.3rem;
 }
 
 
