@@ -6,15 +6,13 @@
     <title>Veaux</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+
 <body>
-<header class="c-header">
-    <h1>Veaux</h1>
-</header>
 
-
-<main class="c-content">
+<main>
     <nav class="c-nav">
         <ul class="c-nav_up">
+            <li class="c-nav_up-li_header"><a href="index.html">Veaux</a></li>
             <li class="c-nav_up-li"><a href="">Otevřít</a></li>
             <li class="c-nav_up-li"><a href="">Uložit</a></li>
             <li class="c-nav_up-li"><a href="">Exportovat</a></li>
@@ -24,62 +22,62 @@
         </ul>
     </nav>
 
-    <div class="c-box">
+    <div class="c-content">
 
+    <div class="c-box"></div>
+
+        <ul class="c-act">
+            <li>
+                <h2 class="c-act_heading c-act_heading-first">Záznam činností</h2>
+                <div class="c-act_inputs">
+                    <textarea name="cinnost" id="input1"></textarea>
+                </div>
+                <div class="c-act_btns-row">
+                    <button class="c-act-btn_2 c-act-btn_marg">Odstranit</button>
+                    <button class="c-act-btn_2">Vymazat vše</button>
+                </div>
+            </li>
+            <li>
+                <h2 class="c-act_heading">Poznámky</h2>
+                <div class="c-act_inputs">
+                    <textarea name="poznamky1" id="input2a" class="c-act-input_marg"></textarea>
+                    <textarea name="poznamky2" id="input2b"></textarea>
+                    <!--<input type="text" id="input2b">-->
+                </div>
+                <div class="c-act_btns-row">
+                    <button class="c-act-btn_3 c-act-btn_marg">Zapsat</button>
+                    <button class="c-act-btn_3 c-act-btn_marg c-act-btn_nomarg">Odstranit</button>
+                    <button class="c-act-btn_3 c-act-btn_marg-top">Vymazat</button>
+                </div>
+            </li>
+            <li>
+                <h2 class="c-act_heading">Činnosti</h2>
+                <div class="c-act_btns-column">
+                    <button class="c-act-btn_clm c-act-btn_marg">Pracuje</button>
+                    <button class="c-act-btn_clm">Manuál</button>
+                    <button class="c-act-btn_clm c-act-btn_marg">Radí se</button>
+                    <button class="c-act-btn_clm">Čeká na Sys</button>
+                    <button class="c-act-btn_clm c-act-btn_marg">Hledá</button>
+                    <button class="c-act-btn_clm">Je ztracen</button>
+                    <button class="c-act-btn_clm c-act-btn_marg">Nepracuje</button>
+                </div>
+            </li>
+            <li>
+                <h2 class="c-act_heading">Sekce</h2>
+                <div class="c-act_inputs">
+                    <textarea name="sekce1" id="input3a" class="c-act-input_marg"></textarea>
+                    <textarea name="sekce2" id="input3b"></textarea>
+                    <!--<input type="text" id="input3b">-->
+                </div>
+                <div class="c-act_btns-column">
+                    <button class="c-act-btn_clm c-act-btn_marg">Nová sekce</button>
+                    <button class="c-act-btn_clm">Odstranit</button>
+                    <button class="c-act-btn_clm c-act-btn_marg">Přejmenovat</button>
+                    <button class="c-act-btn_clm">Vymazat vše</button>
+                </div>
+            </li>
+        </ul>
     </div>
-
-    <ul class="c-act">
-        <li>
-            <h2 class="c-act_heading c-act_heading-first">Záznam činností</h2>
-            <div class="c-act_inputs">
-                <textarea name="cinnost" id="input1"></textarea>
-            </div>
-            <div class="c-act_btns-row">
-                <button class="c-act-btn_2 c-act-btn_marg">Odstranit</button>
-                <button class="c-act-btn_2">Vymazat vše</button>
-            </div>
-        </li>
-        <li>
-            <h2 class="c-act_heading">Poznámky</h2>
-            <div class="c-act_inputs">
-                <textarea name="poznamky1" id="input2a" class="c-act-input_marg"></textarea>
-                <textarea name="poznamky2" id="input2b"></textarea>
-                <!--<input type="text" id="input2b">-->
-            </div>
-            <div class="c-act_btns-row">
-                <button class="c-act-btn_3 c-act-btn_marg">Zapsat</button>
-                <button class="c-act-btn_3 c-act-btn_marg c-act-btn_nomarg">Odstranit</button>
-                <button class="c-act-btn_3 c-act-btn_marg-top">Vymazat</button>
-            </div>
-        </li>
-        <li>
-            <h2 class="c-act_heading">Činnosti</h2>
-            <div class="c-act_btns-column">
-                <button class="c-act-btn_clm c-act-btn_marg">Pracuje</button>
-                <button class="c-act-btn_clm">Manuál</button>
-                <button class="c-act-btn_clm c-act-btn_marg">Radí se</button>
-                <button class="c-act-btn_clm">Čeká na Sys</button>
-                <button class="c-act-btn_clm c-act-btn_marg">Hledá</button>
-                <button class="c-act-btn_clm">Je ztracen</button>
-                <button class="c-act-btn_clm c-act-btn_marg">Nepracuje</button>
-            </div>
-        </li>
-        <li>
-            <h2 class="c-act_heading">Sekce</h2>
-            <div class="c-act_inputs">
-                <textarea name="sekce1" id="input3a" class="c-act-input_marg"></textarea>
-                <textarea name="sekce2" id="input3b"></textarea>
-                <!--<input type="text" id="input3b">-->
-            </div>
-            <div class="c-act_btns-column">
-                <button class="c-act-btn_clm c-act-btn_marg">Nová sekce</button>
-                <button class="c-act-btn_clm">Odstranit</button>
-                <button class="c-act-btn_clm c-act-btn_marg">Přejmenovat</button>
-                <button class="c-act-btn_clm">Vymazat vše</button>
-            </div>
-        </li>
-    </ul>
-
 
 </main>
 
