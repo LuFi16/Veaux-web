@@ -74,6 +74,23 @@ ul {
   resize: none;
   padding: 0.3rem; }
 
+/*  BUTTONS  */
+.c-act-btn_2, .c-act-btn_3, .c-act-btn_clm {
+  background: #AAE825;
+  border: none;
+  color: black;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 0.15em;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  font-size: 0.75rem; }
+
+.c-act-btn_2:hover, .c-act-btn_3:hover, .c-act-btn_clm:hover {
+  background: #97d316; }
+
+.c-act-btn_2:active, .c-act-btn_3:active, .c-act-btn_clm:active {
+  transform: translateY(0.15em); }
+
 @media (max-width: 740px) {
   .c-box {
     margin-bottom: 1rem; }
@@ -194,6 +211,19 @@ ul {
     flex-direction: column; }
 
   .c-act-btn_clm {
+    width: 100%; } }
+@media (min-width: 1000px) and (max-width: 1300px) {
+  /*  BUTTONS */
+  .c-act-btn_3 {
+    width: calc((100% / 2) - (0.5rem / 2));
+    min-width: 6rem; }
+
+  .c-act-btn_marg-top {
+    margin-top: 0.5rem; }
+
+  .c-act_btns-row {
+    display: inline-flex;
+    flex-wrap: wrap;
     width: 100%; } }
 @media (min-width: 1500px) {
   .c-act-btn_clm {
