@@ -7,6 +7,11 @@ $wide:    1300px;
 $btn-min-wdt: 6rem;
 
 $color-main: #AAE825;
+//$color-main: #afd275;
+//$color-main: #86c232;
+//$color-main: #9fedd7;
+//$color-main: #b5daeb;
+//$color-main: #fed7a6;
 $color-main-darker: darken($color-main, 7);
 $color-text-main: black;
 $color-text-invert: white;
@@ -37,20 +42,6 @@ main{
     padding: 0 0.5rem;
   }
 }
-
-/*header{
-  font-family: Calibri;
-  !*background-image: url("../img/background4.jpg");*!
-  background-color: $color-main-darker;
-  background-position: center;
-  width: 100%;
-  height: 10rem;
-  h1{
-    padding: 1rem;
-    margin: 0;
-    color: $color-text-main;
-  }
-}*/
 
 .c-content{
   display: flex;
@@ -94,7 +85,7 @@ ul{
 .c-act{
   display: block;
   margin: 0;
-  padding: 0 1rem 0 1rem;
+  padding: 0 0 0 1rem;
 }
 .c-act_heading{
   margin: 0.5rem 0 0 0;
