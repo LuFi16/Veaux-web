@@ -1,0 +1,70 @@
+
+ul{
+  list-style-type: none;
+}
+.c-nav{
+  width: 100%;
+  object-fit: contain;
+  margin: 0;
+}
+.c-nav_up{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  align-items: center;
+}
+.c-nav_up-li{
+  display: block;
+  margin-right: 0.5rem;
+  a{
+    text-decoration: none;
+    color: $color-text-main;
+  }
+}
+.c-nav_up-li_header{
+  display: block;
+  margin-right: 2rem;
+  background: $color-main;
+  a{
+    text-decoration: none;
+    color: $color-text-main;
+    background: $color-main;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    padding: 0 0.5rem;
+  }
+}
+
+/*
+@media (min-width: $tablet+1px) { //COMPUTER    //this code is in .content
+  .c-nav {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+}*/
+
+@media (min-width: $desktop) {
+  .c-nav_up {
+    background: $color-main;
+    padding: 0 0.5rem;
+  }
+  .c-nav_up-li {
+    background: $color-main;
+    padding: 1.3rem 0;
+    a{
+      background: $color-main;
+      color: $color-text-main ;
+      width: 100%;
+      height: 100%;
+      padding: 1.3rem 0.5rem;
+    }
+  }
+  .c-nav_up-li a:hover{
+    color: $color-text-main;
+    background: $color-main-darker;
+    box-shadow: inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  }
+}

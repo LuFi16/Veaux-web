@@ -1,0 +1,46 @@
+
+.c-act{
+  display: block;
+  margin: 0;
+  padding: 0 0 0 1rem;
+}
+.c-act_heading{
+  margin: 0.5rem 0 0 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.c-act_heading-first{
+  margin: 0
+}
+
+/*  INPUTS  */
+.c-act_inputs{
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.c-act-input_marg{
+  margin-bottom: 0.5rem;
+}
+#input1, #input2a, #input3a{
+  height: 5rem;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  padding: 0.3rem;
+}
+#input2b, #input3b{
+  height: 1.7rem;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  padding: 0.3rem;
+}
+
+
+/*
+@media (min-width: $tablet+1px) { //COMPUTER    //this code is in .content
+  .c-act {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}*/
