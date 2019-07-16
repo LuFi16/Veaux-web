@@ -7,29 +7,34 @@ ul{
   object-fit: contain;
   margin: 0;
 }
-.c-nav_up {
+.c-nav_up, .c-nav_up-mini{
   background: $color-main;
   margin: 0 0 1rem 0;
 }
-.c-nav_up-li{
+.c-nav_up-li, .c-nav_up_mini-menu{
   background: $color-main;
-  a{
+  a, .c-minimenu-label{
     text-decoration: none;
     color: $color-text-main;
     background: $color-main;
   }
-  a:hover{
+  a:hover, .c-minimenu-label:hover{
     color: $color-text-main;
     background: $color-main-darker;
     box-shadow: inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
   }
-  a:active{
+  a:active, .c-minimenu-label:hover{
+    color: $color-text-main;
+    background: $color-main-darker;
+    box-shadow: inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  }
+  a:focus, .c-minimenu-label:focus{
     color: $color-text-main;
     background: $color-main-darker;
     box-shadow: inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
   }
 }
-.c-nav_up-li_header{
+.c-nav_up-li_header, .c-nav_up_mini-header{
   background: $color-main;
   a{
     text-decoration: none;
@@ -46,6 +51,38 @@ ul{
     grid-row: 1/2;
   }
 }*/
+
+/*   MINI MENU  */
+.c-nav_up-mini{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+.c-nav_up_mini-menu{
+  padding: 1.3rem 0;
+  margin-right: 0;
+  a, .c-minimenu-label {
+    padding: 1.3rem 1rem;
+  }
+}
+.c-nav_up_mini-header{
+  margin-right: 0;
+  a, .c-minimenu-label{
+    padding: 0 1rem;
+  }
+}
+#c-minimenu[type=checkbox] {
+  display: none;
+}
+.c-minimenu-nav{
+  display: none;
+}
+#c-minimenu[type=checkbox]:checked ~ .c-minimenu-nav {
+  display: block;
+}
 
 @media (max-width: $menu_hor-vert) {   //smaller screens
   .c-nav_up {
@@ -70,9 +107,18 @@ ul{
       padding: 1rem 0;
     }
   }
+  .c-box{
+    margin-top: 1rem;
+  }
+  .c-nav_up-click{
+    margin: 0;
+  }
+  .c-nav-bigger{
+    display: none;
+  }
 }
 
-@media (min-width: $menu_hor-vert) {   //bigger screens
+@media (min-width: $menu_hor-vert+1px) {   //bigger screens
   .c-nav_up{
     display: flex;
     flex-direction: row;
@@ -91,5 +137,8 @@ ul{
     a{
       padding: 0 0.5rem;
     }
+  }
+  .c-nav_up-mini{
+    display: none;
   }
 }

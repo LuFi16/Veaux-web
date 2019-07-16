@@ -10,7 +10,7 @@
 <body>
 
 <main>
-    <nav class="c-nav">
+    <nav class="c-nav c-nav-bigger">
         <ul class="c-nav_up">
             <li class="c-nav_up-li_header"><a href="index.html">Veaux</a></li>
             <li class="c-nav_up-li"><a href="">Otevřít</a></li>
@@ -21,6 +21,28 @@
             <li class="c-nav_up-li"><a href="">Nápověda</a></li>
         </ul>
     </nav>
+
+    <!-- Menu on click for small screens -->
+    <ul class="c-nav_up-mini">
+        <li class="c-nav_up_mini-header"><a href="index.html">Veaux</a></li>
+        <li class="c-nav_up_mini-menu">
+            <label for="c-minimenu" class="c-minimenu-label">Menu</label>
+        </li>
+    </ul>
+    <input type="checkbox" id="c-minimenu">
+    <nav class="c-nav c-minimenu-nav">
+        <ul class="c-nav_up c-nav_up-click">
+            <li class="c-nav_up-li"><a href="">Otevřít</a></li>
+            <li class="c-nav_up-li"><a href="">Uložit</a></li>
+            <li class="c-nav_up-li"><a href="">Exportovat</a></li>
+            <li class="c-nav_up-li"><a href="">Činnosti</a></li>
+            <li class="c-nav_up-li"><a href="">Nastavení</a></li>
+            <li class="c-nav_up-li"><a href="">Nápověda</a></li>
+        </ul>
+    </nav>
+
+
+
 
     <div class="c-content">
 
