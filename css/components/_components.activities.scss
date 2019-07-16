@@ -2,7 +2,6 @@
 .c-act{
   display: block;
   margin: 0;
-  padding: 0 0 0 1rem;
 }
 .c-act_heading{
   margin: 0.5rem 0 0 0;
@@ -36,11 +35,21 @@
   padding: 0.3rem;
 }
 
-
-/*
-@media (min-width: $tablet+1px) { //COMPUTER    //this code is in .content
+/*@media (min-width: $tablet+1px) { //COMPUTER    //this code is in .content
   .c-act {
     grid-column: 2/3;
     grid-row: 2/3;
   }
 }*/
+
+@media (max-width: $tablet){
+  .c-act{
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet+1px){
+  .c-act{
+    padding-left: 1rem;
+  }
+}
